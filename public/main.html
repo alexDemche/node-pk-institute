@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="./img/favicon.png" />
+  <title>Приймальна комісія, коледж морського і річкового флоту</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Font Awesome -->
+  <script defer src="https://kit.fontawesome.com/07d500c4ac.js"></script>
+</head>
+
+<body>
+  <!-- Start navbar -->
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand d-flex" href="#">
+      <div>
+        <img src="./img/logo_2.png" class="d-inline-block align-center mr-1" width="50" height="50" alt="logo" />
+      </div>
+      <div class="">Приймальна комісія
+        <br />
+        <div style="font-size: 0.66rem">Коледж морського і річкового флоту</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Головна <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Про коледж</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Інформація вступникам
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Факультети</a>
+            <a class="dropdown-item" href="#">Правила прийому</a>
+            <a class="dropdown-item" href="#">Прийомна комісія</a>
+            <a class="dropdown-item" href="#">Ліцензії</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Вартість навчання</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <!-- Start search form -->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Пошук..." aria-label="Search" />
+        <button class="btn btn-outline-primary my-2 my-sm-0 mr-1" type="submit">
+          Знайти
+        </button>
+        <!-- <a href="/users/logout" class="btn btn-danger m-2">Вийти</a>  -->
+        <a href="/dashboard" class="btn btn-secondary ml-1 mr-1">Мiй Кабiнет</a>
+      </form>
+      <!-- END search form -->
+    </div>
+  </nav>
+  <!-- END navbar -->
+  <!-- #7AA5D2 -->
+
+  <!-- Start header slogan section -->
+  <header class="header-slogan bg-warning height">
+    <div class="container">
+      <div class="row text-light align-items-center height">
+        <div class="col">
+          <h1 class="header-slogan__h1 text-white text-uppercase font-weight-bold font-italic">
+            <strong>Запрошуємо на навчання!</strong>
+          </h1>
+          <h4 class="text-light py-3">Прийом документів з 10 липня</h4>
+          <!-- <a href="/users/register" class="btn btn-primary mr-3">Зареєструватись</a>
+          <a href="/users/login" class="btn btn-primary">Увійти</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END header slogan slogan -->
+
+  <!-- Start About section -->
+  <section id="about" class="about height bg-dark " style="border-bottom: 1px solid #6C757D">
+    <div class="container d-flex flex-column justify-content-center align-items-center height py-5">
+      <!-- Title -->
+      <div class="row pb-1">
+        <div class="col text-center">
+          <h2 class="text-uppercase text-light mb-0">
+            <strong>Коледж морського і річкового флоту</strong>
+          </h2>
+          <div class="title-underline bg-primary"></div>
+          <p class="mt-2 text-capitalize text-muted">
+            Державного університету інфраструктури та технологій
+          </p>
+        </div>
+      </div>
+      <!-- END of Title -->
+      <div class="row text-center">
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">історія</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_1">
+            <i class="fas fa-history fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_1 -->
+          <div class="modal fade" id="aboutModal_1" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_1"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_1">історія
+                    коледжу
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+                  <p class="text-left">Коледж морського і річкового флоту Київської державної академії водного
+                    транспорту імені гетьмана
+                    П.
+                    Конашевича-Сагайдачного є правонаступником Київського суднобудівного технікуму, заснованого ще в
+                    першій половині ХХ
+                    століття.</p>
+
+                  <p>20 березня 1940 року наказом народного Комісара суднобудівної промисловості СРСР 59/К
+                    професійно-технічне училище заводу
+                    «Ленінська кузня» змінило свій статус, отримавши назву «Київський суднобудівний технікум». Так
+                    почалася історія
+                    навчального закладу</p>
+
+                  <p>Під час Великої Вітчизняної війни технікум разом із заводом був евакуйований до м. Зеленодольськ, а
+                    звідти повернувся в
+                    1944 році і розташувався в приміщеннях заводу автоматики ім. Петровського.</p>
+
+                  <p>У 1955 році після завершення будівництва навчального комплексу (навчальний корпус, майстерні,
+                    гуртожиток) технікум було
+                    переведено до нього за адресою: м. Київ, Суднобудівний провулок, 5.</p>
+
+                  <p>У зв’язку із створенням науково-дослідного інституту гідро приладів (наказ Міністерства
+                    суднобудівної
+                    промисловості СРСР
+                    від 01.10.1956 р. №0027/СС) технікум було перейменовано в Київський вечірній електромеханічний
+                    технікум, який в 1957
+                    році був переданий у підпорядкування Київського Раднаргоспу (Постанова Ради Міністрів СРСР від
+                    22.05.1957 р. «156,Наказ
+                    Мінсудпрому СРСР від 29.06.1957 р. №0134).</p>
+
+                  <p>Рішенням Київського Раднаргоспу Київський вечірній електромеханічний технікум у вересні 1960 року
+                    був
+                    приєднаний до
+                    Київського електромеханічного технікуму. З того часу технікум припинив своє існування майже на 7
+                    років.</p>
+
+                  <p>Друге відродження Київського суднобудівного технікуму відбулося і 1966 році відповідно до наказу
+                    Міністерства
+                    суднобудівної промисловості СРСР від 10 грудня 1966 р. №780. З 28 березня 1983 року технікум
+                    переведено до нового
+                    навчально-лабораторного корпусу за адресою: проспект Героїв Сталінграда, 2.</p>
+
+                  <p>У 1991 році Київський суднобудівний технікум переведено у підпорядкування Мінвузу України (наказ
+                    від
+                    28 листопада 1991
+                    року №231).</p>
+
+                  <p>У 90-ті роки ХХ століття в освітянській галузі, як і в усій країні, відбувалися складні процеси
+                    змін
+                    та реформування. У
+                    цей час багато технікумів з різних причин вступали у співпрацю з вищими навчальними закладами.
+                    Досить
+                    часто така
+                    співпраця закінчувалася об’єднанням, такий шлях обрав і Київський суднобудівний технікум.</p>
+
+                  <p>У 1998 році керівництво Київського суднобудівного технікуму прийняло пропозицію Київського
+                    інституту
+                    водного транспорту
+                    ОДМА про створення шляхом об’єднання нового навчального закладу.</p>
+
+                  <p>14 грудня 1998 року постановою Кабінету міністрів України № 1970 «Про створення Київської державної
+                    академії водного
+                    транспорту» на базі Київського інституту водного транспорту Одеської державної водної академії та
+                    Київського
+                    суднобудівного технікуму було створено Київську державну академію водного транспорту, в яку технікум
+                    увійшов як
+                    структурний підрозділ без права юридичної особи під назвою «Суднобудівний технікум КДАВТ».</p>
+
+                  <p>Наказом МОНУ від 02 червня 2004 р. №439 технікуму присвоєно назву Коледж морського і річкового
+                    флоту
+                    Київської державної
+                    академії водного транспорту імені гетьмана Петра Конашевича-Сагайдачного.</p>
+
+                  <p>Основними напрямками діяльності Коледжу є: підготовка згідно з державним замовленням і договірним
+                    «зобов’язанням»
+                    висококваліфікованих фахівців першого освітньо-кваліфікаційного рівня для різних галузей народного
+                    господарства України;
+                    надання випускникам повної загальної середньої освіти; підвищення кваліфікації педагогічних кадрів,
+                    навчально-допоміжного персоналу та їх перепідготовка; довузівська підготовка студентів на
+                    підготовчих
+                    курсах; навчання
+                    студентів для здобуття другої кваліфікації молодшого спеціаліста, одержання робітничих професій,
+                    культурно-освітня,
+                    методична, виробничо-комерційна робота, створення умов для всебічного розвитку особистості,
+                    розкриття
+                    її здібностей,
+                    поширення наукових знань серед населення, підвищення його загальноосвітнього та культурного рівня,
+                    надання платних
+                    послуг у сфері освітньої діяльності відповідно до чинних законодавчих та нормативних актів України.
+                  </p>
+
+                  <p>Сьогодні Коледж морського і річкового флоту Київської державної академії водного транспорту імені
+                    гетьмана Петра
+                    Конашевича-Сагайдачного є сучасним навчальним закладом, який здійснює підготовку студентів на
+                    високому
+                    професійному
+                    рівні, використовуючи у своїй діяльності новітні методи роботи. Велика увага приділяється покращенню
+                    навчально-методичної та матеріально-технічної бази коледжу. При цьому слід зазначити, що Коледж
+                    морського і річкового
+                    флоту КДАВТ є єдиним в Україні навчальним закладом І рівня акредитації, який за спеціальностями
+                    «Судноводіння на
+                    морських шляхах» та «Експлуатація суднових енергетичних установок» готує фахівців змішаного
+                    ріка-море
+                    плавання.</p>
+
+                  <p>У своєму складі коледж має структурні підрозділи: денні та заочні відділення,предметні (циклові)
+                    комісії, навчальні
+                    лабораторії та кабінети, філіал бібліотеки Академії з читальним залом, спортивні споруди,
+                    навчально-виробничі
+                    майстерні,соціально-культурні об’єкти (медпункт, буфет, актову залу, спортзал).</p>
+
+                  <p>Підготовлені і затверджені в установленому порядку відповідно до Закону України «Про вищу освіту»
+                    положення про
+                    педагогічну раду, циклову (предметну) комісію, адміністративну раду,концепція організації та
+                    планування навчального
+                    процесу згідно з листами Міністерства освіти і науки України. Для всіх категорій працівників
+                    розроблені посадові
+                    інструкції.</p>
+
+                  <p>Коледж проводить підготовку фахівців за денною та заочною формами навчання на основі базової та
+                    повної
+                    загальної
+                    середньої освіти.</p>
+
+                  <p>Право на провадження освітньої діяльності на рівні кваліфікаційних вимог до молодшого спеціаліста
+                    надано навчальному
+                    закладу ліцензією серії АА № 903332 і сертифікатом про акредитацію.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_1 -->
+        </div>
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">розклад</h4>
+          <!-- Start Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_2">
+            <i class="far fa-clock fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_2 -->
+          <div class="modal fade" id="aboutModal_2" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_2"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_2">розклад
+                    роботи приймальної комісії
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Start working hours table_1 -->
+                <div class="modal-body">
+                  <table style="width: 100%;" border="1" cellspacing="0" cellpadding="2" align="center">
+                    <thead>
+                      <tr>
+                        <th>Термін</th>
+                        <th valign="top">Дні</th>
+                        <th valign="top">Години</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01-09 липня 2019 року</td>
+                        <td valign="top">Понеділок — п’ятниця</td>
+                        <td valign="top">14<sup>00</sup>-17<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">10-22 липня 2019 року</td>
+                        <td valign="top">Понеділок — п’ятниця</td>
+                        <td valign="top">9<sup>00</sup>-18<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Субота</td>
+                        <td valign="top">10<sup>00</sup>-13<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Неділя</td>
+                        <td valign="top">Вихідний</td>
+                      </tr>
+                      <tr>
+                        <td>23-26 липня 2019 року</td>
+                        <td valign="top">Вівторок — п’ятниця</td>
+                        <td valign="top">14<sup>00</sup>-17<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td>27-31 липня 2019 року</td>
+                        <td valign="top">Субота — середа</td>
+                        <td valign="top">9<sup>00</sup>-18<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td>01 — 03 серпня 2019 року</td>
+                        <td valign="top">Четвер — субота</td>
+                        <td valign="top">12<sup>00</sup>-17<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">04 — 17 серпня 2018 року</td>
+                        <td valign="top">Понеділок, середа, четвер</td>
+                        <td valign="top">14<sup>00</sup>-17<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Вівторок, п’ятниця</td>
+                        <td valign="top">10<sup>00</sup>-13<sup>00</sup></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Субота – неділя*</td>
+                        <td valign="top">Вихідний</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top">Cвяткові дні</td>
+                        <td valign="top">Вихідний</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- END working hours table_1 -->
+                  <hr />
+                  <!-- Start working hours table_2 -->
+                  <table border="1" cellspacing="0" cellpadding="2" align="center">
+                    <thead>
+                      <tr>
+                        <th colspan="3">Етапи вступної кампанії<p></p>
+                          <p>(вступники на основі повної загальної середньої освіти та на основі
+                            освітньо-кваліфікаційного рівня «молодший
+                            спеціаліст»)</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">Початок реєстрації електронних кабінетів вступників, завантаження додатків до
+                          документів про повну
+                          загальну середню освіту</td>
+                        <td>01 липня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Початок прийому заяв та документів</td>
+                        <td>10 липня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Закінчення прийому заяв та документів від осіб, які складають творчий конкурс,
+                          вступні
+                          випробування (співбесіду)</td>
+                        <td>16 липня 2019 року, 18-00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Закінчення прийому заяв та документів від осіб, які вступають на основі
+                          освітньо-кваліфікаційного
+                          рівня «молодший спеціаліст»</td>
+                        <td>22 липня 2019 року, 18-00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Закінчення прийому заяв та документів на основі ЗНО</td>
+                        <td>22 липня 2019 року, 18-00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Строки проведення творчих конкурсів</td>
+                        <td>01 липня – 10 липня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Строки проведення вступних випробувань (співбесід)</td>
+                        <td>17 липня – 22 липня 2019 року (співбесіди 17 – 19 липня)</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Строки проведення вступних випробувань для вступників на основі
+                          освітньо-кваліфікаційного рівня
+                          «молодший спеціаліст»</td>
+                        <td>23 липня – 25 липня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Терміни оприлюднення рейтингового списку вступників із зазначенням
+                          рекомендованих до зарахування
+                          на місця державного замовлення</td>
+                        <td>не пізніше 26 липня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Закінчення строку виконання вступниками вимог до зарахування на місця державного
+                          замовлення</td>
+                        <td>не пізніше 18.00 31 липня 2018 року</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Закінчення строку виконання вступниками, які отримали рекомендацію, вимог до
+                          зарахування на місця,
+                          що фінансуються за кошти фізичних та юридичних осіб</td>
+                        <td>не пізніше 17.00<p></p>
+                          <p>06 серпня 2018 року</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Терміни зарахування вступників</td>
+                        <td>за державним замовленням</td>
+                        <td>не пізніше 12.00 01 серпня 2019 року</td>
+                      </tr>
+                      <tr>
+                        <td>за кошти фізичних та юридичних осіб</td>
+                        <td>не пізніше<p></p>
+                          <p>07 серпня 2019 року</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- END working hours table_2 -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_2 -->
+        </div>
+        <div class="col-6 col-sm-3 my-3">
+          <!-- Start Modal_3 -->
+          <h4 class="text-light text-capitalize">документи</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_3">
+            <i class="fas fa-passport fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <div class="modal fade" id="aboutModal_3" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_3"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_3">документы для
+                    вступу
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+                  <h6>
+                    <strong>
+                      Перелік документів, які необхідно подати абітурієнтам для вступу до
+                      Коледжу морського і річкового флоту ДУІТ
+                    </strong>
+                  </h6>
+                  <ul>
+                    <li>Заява</li>
+                    <li>Документ про базову середню освіту (свідоцтво) для вступу на базі 9 класів</li>
+                    <li>Документ про повну загальну середню освіту(атестат) для вступу на базі 11 класів</li>
+                    <li>Сертифікат зовнішноього незалежного оцінювання для вступу на базі 11 класів</li>
+                    <li>Медична довідка за формою 025-Ю для вступу за спеціальністью "Річковий та морський транспорт"
+                    </li>
+                    <li>Медична довідка за формою 086-У фбо 086-О</li>
+                    <li>Копія паспорту (ID-картки)</li>
+                    <li>Копія витягу з Єдиного державного демографічного реєстру щодо реєстрації місця проживання</li>
+                    <li>Копія ідентифікаційного номерк</li>
+                    <li>6Копія приписного посвідчення (для юнаків)</li>
+                    <li>Папка для паперів</li>
+                    <li>2 файли, 2конверти з марками</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_3 -->
+        </div>
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">факультети</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_4">
+            <i class="fas fa-list-alt fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_4 -->
+          <div class="modal fade" id="aboutModal_4" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_4"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_4">
+                    Список факультетiв
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_4 -->
+        </div>
+
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">списки</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_4">
+            <i class="fas fa-list-alt fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_4 -->
+          <div class="modal fade" id="aboutModal_4" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_4"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_4">списки
+                    зарахованих
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_4 -->
+        </div>
+
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">списки</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_4">
+            <i class="fas fa-list-alt fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_4 -->
+          <div class="modal fade" id="aboutModal_4" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_4"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_4">списки
+                    зарахованих
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_4 -->
+        </div>
+
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">списки</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_4">
+            <i class="fas fa-list-alt fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_4 -->
+          <div class="modal fade" id="aboutModal_4" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_4"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_4">списки
+                    зарахованих
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_4 -->
+        </div>
+
+        <div class="col-6 col-sm-3 my-3">
+          <h4 class="text-light text-capitalize">списки</h4>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal_4">
+            <i class="fas fa-list-alt fa-6x"></i>
+          </button>
+          <!-- END Button trigger modal -->
+          <!-- Start Modal_4 -->
+          <div class="modal fade" id="aboutModal_4" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel_4"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-capitalize font-weight-bold w-100" id="aboutModalLabel_4">списки
+                    зарахованих
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-left">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Modal_4 -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- END About section -->
+
+  <!-- Start Contact section -->
+  <section id="contact" class="contact bg-dark height d-flex align-items-center py-5">
+    <div class="container">
+      <!-- Title -->
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="text-uppercase text-light mb-0">
+            <strong class="pb-0" style="border-bottom: 2px solid #007BFF">Контакти</strong>
+          </h2>
+          <div class="title-underline bg-primary"></div>
+          <p class="mt-2 text-capitalize text-muted">
+            Наші контакти та карта проїзду
+          </p>
+        </div>
+      </div>
+      <!-- END of Title -->
+      <div class="row align-items-center">
+        <!-- Start Adress/Phone column -->
+        <div class="col-md-6 my-3">
+          <h6 class="text-secondary mb-0">
+            Наша адреса:
+          </h6>
+          <p class="text-light mb-2">Україна, 04211, м. Київ, проспект Героїв Сталінграду, 2</p>
+          <h6 class="text-secondary mb-0">
+            Телефони для довідок:
+          </h6>
+          <div>
+            <a class="text-light" href="tel:+380444198546">+38 (044) 419-85-46</a> <span class="text-secondary">–
+              Приймальна
+              Директора</span>
+          </div>
+          <div class="mb-2 ">
+            <a class="text-light" href="tel:+380444199253">+38 (044) 419-92-53</a> <span class="text-secondary">–
+              Приймальна Комісія</span>
+          </div>
+          <div>
+            <p class="text-secondary mb-0">E-mail:</p>
+            <a class="text-light" href="mailto:college@kmrf.kiev.ua">college@kmrf.kiev.ua</a>
+          </div>
+        </div>
+        <!-- END Adress/Phone column -->
+        <!-- Start Map column -->
+        <div class="col-md-6 my-3">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10153.3463629944!2d30.526531!3d50.490693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd63294dc90b92fa0!2sMarine%2C+River+Fleet+College.+Kyiv+State+Maritime+Academy!5e0!3m2!1sen!2sua!4v1560116036286!5m2!1sen!2sua"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <!-- END Map Column -->
+      </div>
+    </div>
+  </section>
+  <!-- END Contact section -->
+
+  <footer class="fotter bg-dark">
+    <div class="footer-underline bg-secondary"></div>
+    <div class="container">
+      <!-- Copyright -->
+      <div class="foter-icon bg-dark d-flex justify-content-center pt-3">
+        <a class="mr-4" href="#"><i class="fab fa-facebook fa-3x"></i></a>
+        <a class="mr-4" href="#"><i class="fab fa-twitter fa-3x"></i></a>
+        <a class="mr-4" href="#"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+      </div>
+      <div class="footer-copyright text-center py-3 bg-dark text-secondary">
+        © 2019 Copyright:
+        <a href="//kmrf.kiev.ua" target="_blank" class="text-secondary"> kmrf.kiev.ua</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+  </footer>
+
+
+  <!-- Start scroll top button -->
+  <div id="scrollTopBtn" class="scrollTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+      viewBox="0 0 284.929 284.929" xml:space="preserve">
+      <g>
+        <path
+          d="M17.128,167.872c1.903,1.902,4.093,2.854,6.567,2.854c2.474,0,4.664-0.952,6.567-2.854L142.466,55.666l112.208,112.206    c1.902,1.902,4.093,2.854,6.563,2.854c2.478,0,4.668-0.952,6.57-2.854l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.563    c0-2.475-0.951-4.665-2.847-6.567L149.028,7.419c-1.901-1.906-4.088-2.853-6.562-2.853s-4.665,0.95-6.567,2.853L2.856,140.464    C0.95,142.367,0,144.554,0,147.034c0,2.468,0.953,4.658,2.856,6.561L17.128,167.872z"
+          data-original="#000000" class="active-path" data-old_color="#000000" />
+        <path
+          d="M149.028,117.055c-1.901-1.906-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,250.1    C0.95,252.003,0,254.192,0,256.67c0,2.472,0.953,4.661,2.856,6.564l14.272,14.276c1.903,1.903,4.093,2.848,6.567,2.848    c2.474,0,4.664-0.951,6.567-2.848l112.204-112.209l112.208,112.209c1.902,1.903,4.093,2.852,6.563,2.852    c2.478,0,4.668-0.948,6.57-2.852l14.274-14.276c1.902-1.903,2.847-4.093,2.847-6.564c0-2.478-0.951-4.667-2.847-6.57    L149.028,117.055z"
+          data-original="#000000" class="active-path" data-old_color="#000000" />
+      </g>
+    </svg>
+  </div>
+  <!-- END scroll top button -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
