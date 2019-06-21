@@ -13,6 +13,14 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  secondName: {
+    type: String,
+    required: true
+  },
+  facultet: {
+    type: String,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now
@@ -20,5 +28,6 @@ const UserSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', UserSchema);
+
 
 module.exports = User;

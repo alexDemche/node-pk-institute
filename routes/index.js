@@ -2,11 +2,12 @@ const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
 
+
 const path = require('path');
 //Main HTML
 // router.get('/main', function (req, res) {
 // res.sendFile(path.join(__dirname + '/public/main.html'));
-//__dirname : It will resolve to your project folder.
+
 // });
 
 //  Welcome Page
@@ -16,12 +17,24 @@ router.get('/', (req, res) => {
 
 //  Dashboard Page
 router.get('/dashboard', (req, res) => {
-  res.render('dashboard', { name: req.user.name });
+  res.render('dashboard', {
+    name: req.user.name,
+    secondName: req.user.secondName,
+    email: req.user.email,
+    facultet: req.user.facultet,
+  });
 });
+
 
 // Main HTML Page
 router.get('/main', ensureAuthenticated, (req, res) => {
-  res.sendFile(path.join(__dirname + '/../public/main.html'));
+  // res.sendFile(path.join(__dirname + '/../public/main.html'));
+  // const all = require('../routes/users').all;
+  res.render('main', { name: req.user.name, email: req.user.email, users: req.users });
 });
+
+
+
+
 
 module.exports = router;

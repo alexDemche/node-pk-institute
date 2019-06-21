@@ -1,40 +1,50 @@
-<h1 class="mt-4">Особистий кабінет</h1>
-<p class="lead mb-3">Ласкаво просимо <strong style="font-size: 25px"><%= name %></strong></p>
-<!-- Start working hours table_2 -->
-<table class="mb-3" style="width: 100%" border="1" cellspacing="0" cellpadding="2" align="center">
-  <thead>
-    <tr>
-      <th colspan="2">Список та дата вступних iспитiв<p></p>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td colspan="1">Lorem ipsum dolor sit amet.</td>
-      <td>Дата</td>
-    </tr>
-  </tbody>
-</table>
-<!-- END working hours table_2 -->
-<a href="/main" class="btn btn-primary mr-3">Назад</a>
-<a href="/users/logout" class="btn btn-danger">Вийти</a>
+<div class="container">
+
+  <div class="card my-5">
+    <h3 class="card-header">Особистий кабінет</h3>
+    <div class="card-body">
+      <h5 class="card-title"><span class="font-weight-normal">Ласкаво просимо</span> <%= name %> <%= secondName %></h5>
+      <hr />
+      <p class="card-text">Ваша почта: <strong><%= email %></strong></p>
+      <p class="card-text">Вы обрали факультет: <strong><%= facultet %></strong></p>
+      <a href="/main" class="btn btn-primary mr-3">Назад</a>
+      <a href="/users/logout" class="btn btn-danger">Вийти</a>
+    </div>
+  </div>
+  <!-- Start working hours table_2 -->
+  <!-- <table class="mb-3" style="width: 100%" border="1" cellspacing="0" cellpadding="2" align="center">
+    <thead>
+      <tr>
+        <th colspan="2">Список та дата вступних iспитiв<p></p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+      <tr>
+        <td colspan="1">Lorem ipsum dolor sit amet.</td>
+        <td>Дата</td>
+      </tr>
+    </tbody>
+  </table> -->
+  <!-- END working hours table_2 -->
+</div>

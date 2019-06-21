@@ -10,7 +10,7 @@ let path = require('path');
 const app = express();
 
 
-
+const User = require('./models/User');
 // Passport config
 require('./config/passport')(passport);
 
@@ -60,10 +60,21 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
 // Main Page, after login
-app.get('/main', function (req, res) {
-  res.sendFile(path.join(__dirname + '/public/main.html'));
-});
+// app.get('/main', function (req, res) {
+//   res.sendFile(path.join(__dirname + '/public/main.html'));
+// });
 
+// List of All Users
+app.get('/users', function (req, res) {
+  User.find({}, function (err, users) {
+    if (err) {
+      res.send('something go wrong');
+      next();
+    }
+    // let allUsers = res.json(users.map(user => `Iм'я: ${user.name} ${user.secondName}, Почта: ${user.email}, Факультет: ${user.facultet}`));
+    let us = res.json(users.map(user => `****** Iм'я: ${user.name}${user.secondName}, Факультет: ${user.facultet} ******`).toString());
+  })
+})
 
 
 const PORT = process.env.PORT || 5000;

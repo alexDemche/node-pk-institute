@@ -21,12 +21,12 @@ router.get('/register', (req, res) => {
 router.post('/register', (req, res) => {
   // console.log(req.body)
   // res.send('hekko');
-  const { name, email, password, password2 } = req.body;
+  const { name, email, password, password2, secondName, facultet } = req.body;
 
   let errors = [];
 
   //Check required fields
-  if (!name || !email || !password || !password2) {
+  if (!name || !email || !password || !password2 || !secondName || !facultet) {
     errors.push({ msg: 'Будь-ласка заповнiть всi поля' })
   }
 
@@ -46,10 +46,15 @@ router.post('/register', (req, res) => {
       name,
       email,
       password,
-      password2
+      password2,
+      secondName,
+      facultet
     })
   } else {
     //Validation passed
+
+
+
     User.findOne({ email: email })
       .then(user => {
         //User exist
@@ -60,13 +65,17 @@ router.post('/register', (req, res) => {
             name,
             email,
             password,
-            password2
+            password2,
+            secondName,
+            facultet
           })
         } else {
           const newUser = new User({
             name,
             email,
-            password
+            password,
+            secondName,
+            facultet
           })
 
           // console.log(newUser)
@@ -87,6 +96,7 @@ router.post('/register', (req, res) => {
         }
       })
   }
+
 
 });
 
