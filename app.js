@@ -72,7 +72,7 @@ app.get('/users', function (req, res) {
       next();
     }
     // let allUsers = res.json(users.map(user => `Iм'я: ${user.name} ${user.secondName}, Почта: ${user.email}, Факультет: ${user.facultet}`));
-    let us = res.json(users.map(user => `****** Iм'я: ${user.name}${user.secondName}, Факультет: ${user.facultet} ******`).toString());
+    let us = res.json(users.map(user => `****** Iм'я: ${user.name} ${user.secondName}, Факультет: ${user.facultet} ******`).toString());
   })
 })
 

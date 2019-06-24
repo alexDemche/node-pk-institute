@@ -28,13 +28,10 @@ router.get('/dashboard', (req, res) => {
 
 // Main HTML Page
 router.get('/main', ensureAuthenticated, (req, res) => {
-  // res.sendFile(path.join(__dirname + '/../public/main.html'));
+  res.sendFile(path.join(__dirname + '/../public/index.html'));
   // const all = require('../routes/users').all;
-  res.render('main', { name: req.user.name, email: req.user.email, users: req.users });
+  // res.render('main', { name: req.user.name, email: req.user.email });
 });
-
-
-
 
 
 module.exports = router;
